@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo-header {
+    margin-top: 45px;
+}
+.nav-bar {
+    margin-top: 51px;
+}
+.title {
+    margin-top: 89px;
+    margin-bottom: 17px;
+}
+.buttons {
+    margin-top: 37px;
+    margin-bottom: 162px;
+}
+.main-info-pic {
+    margin-top: 94px;
+    margin-bottom: 162px;
+}
+.logos {
+    padding-top: 97px;
+    padding-bottom: 96px;
+}
