@@ -58,6 +58,9 @@
     font-weight: 400;
     line-height: normal;
 }
+.button-info1:hover{
+    background-color: #bd3e10;
+}
 .button-info2{
     color: #AAA;
     font-size: 15px;
@@ -66,6 +69,9 @@
     line-height: normal;
     background-color: #FFF;
     border: #FFF;
+}
+.button-info2:hover{
+    color: #F25822;
 }
 .main-info-pic {
     margin-top: 94px;
@@ -85,4 +91,152 @@
 .center {
     padding-left: calc(50% - 554px);
     padding-right: calc(50% - 554px);
+}
+.cards {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 491px;
+}
+.cards-card {
+    width: 370px;
+    height: 291px;
+}
+.card-icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.card-title {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 215px;
+    margin-bottom: 17px;
+}
+.card-text {
+    color: #666;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    width: 310px;
+    height: 42px;
+    margin-bottom: 25px;
+}
+.read-more {
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+    text-decoration: none;
+}
+.read-more:hover{
+    color: #F25822;
+}
+.card2 {
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    padding-left: 30px;
+}
+.card1 {
+    padding-left: 36px;
+}
+.card3 {
+    padding-left: 60px;
+}
+.choice-title {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 579px;
+    margin-bottom: 19px;
+    margin-top: 92px;
+    text-align: center;
+    margin-left: 51px;
+}
+.choice-text {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    width: 682px;
+    margin-bottom: 54px;
+}
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+.choice-cards{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.choise-card {
+    background-color: #FFF;
+    width: 370px;
+    height: 549px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.choise-card.image{
+    width: 370px;
+    height: 289px;
+}
+.choice-card-title {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 204px;
+}
+.choise-card-button{
+    width: 150px;
+    height: 50px;
+    background-color: #F25822;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%; /* 19.5px */
+    margin-top: 39px;
+    margin-bottom: 50px;
+}
+.choise-card-button:hover{
+    background-color: #bd3e10;
+}
+.choise-card-text{
+    width: 310px;
+    height: 63px;
+    color: #AAA;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    margin-top: 22px;
+}
+.ch-card2{
+    background: #FFF;
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+.fa-chevron-right{
+    margin-left: 6px;
 }
