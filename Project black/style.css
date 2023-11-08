@@ -10,9 +10,10 @@ body {
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
 }
-.flex {
+.flex-logo, .flex-learn-more, .flex-about, .flex-footer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header {
     padding-top: 39px;
@@ -86,14 +87,19 @@ body {
 .main-button:hover {
     color: rgb(12, 237, 237);
 }
-.main-left-info {
-    margin-right: 128px;
-}
 .main-left-info, .main-right-info {
     height: 415px;
 }
 main {
     margin-bottom: 197px;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .logo {
     margin-bottom: 256px;
@@ -295,4 +301,62 @@ main {
 .fa-twitter, .fa-linkedin, .fa-youtube {
     opacity: 0.6;
     color: #FFF;
+}
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .flex-logo {
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        margin: auto;
+    }
+    .logo {
+        margin-bottom: 277px;
+    }
+    .flex-learn-more {
+        justify-content: center;
+        gap: 68px;
+    }
+    .learn-more-left, .learn-more-right {
+        margin: 0;
+        padding: 0;
+    }
+    .box4, .box5, .box6 {
+        display: none;
+    }
+    .content {
+        grid-template-columns: 362px;
+        justify-content: center;
+        gap: 32px;
+    }
+    .flex-about {
+        gap: 64px;
+        justify-content: center;
+    }
+    .footer{
+        padding-bottom: 48px;
+    }
+    .flex-footer {
+        gap: 30px;
+    }
+    .info1 {
+        width: 369px;
+        height: 156px;
+    }
+    .info2 {
+        width: 350px;
+    }
+    .info3 {
+        width: 362px;
+    }
 }
