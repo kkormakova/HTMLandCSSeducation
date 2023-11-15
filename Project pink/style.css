@@ -220,3 +220,38 @@
     margin-top: 48px;
     margin-bottom: 60px;
 }
+@media (max-width: 1024px){
+    .center {
+        padding-left: calc(50% - 367px);
+        padding-right: calc(50%  - 367px);
+    }
+    .main-content{
+        height: 368px;
+    }
+    .main-pic {
+        width: 386px;
+        height: 368px;
+    }
+    .main-title{
+        font-size: 44px;
+    }
+    .main-subtitle {
+        font-size: 24px;
+    }
+    .sale{
+        gap: 19px;
+    }
+    .sale-item-big{
+        height: 116px;
+    }
+    .sale-img {
+        height: 168px;
+    }
+    .sale-big-img {
+        height: 116px;
+    }
+    .card-box {
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
