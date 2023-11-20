@@ -1,0 +1,139 @@
+@-webkit-keyframes rotate-scale-down-diag-1 {
+    0% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+            transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+    -webkit-transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+            transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+            transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    }
+}
+@keyframes rotate-scale-down-diag-1 {
+    0% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+            transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+    -webkit-transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+            transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+    -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+            transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    }
+}
+a{
+    text-decoration: none;
+}
+.menu-link:hover {
+    color: red;
+}
+.menu-link:active{
+    color: green;
+}
+.menu-list:first-child .menu-link {
+    text-decoration: underline;
+}
+.menu-list:last-child .menu-link {
+    font-weight: bold;
+}
+.menu-list:nth-child(3) .menu-link {
+    background-color: orange;
+}
+.product {
+    width: 250px;
+    padding: 24px;
+    border: 1px solid #000;
+    position: relative;
+}
+.product__img {
+    background-color: forestgreen;
+    height: 150px;
+}
+.product-new::after{
+    content: "new!";
+    width: 35px;
+    height: 35px;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.product-sale::before {
+    content: "sale!";
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.icon:hover path {
+    fill: purple;
+}
+.icon:active path {
+    fill: yellow;
+}
+.item {
+    width: 150px;
+    height: 86px;
+    background-color: forestgreen;
+    border: 1px solid #000;
+    transition: transform 1s;
+}
+.item_1:hover {
+    transform: translateX(50px);
+}
+.item_2:hover {
+    transform: scale(2);
+}
+.item_3:hover {
+    transform: rotate(60deg);
+}
+.content-5{
+    margin-top: 200px;
+    margin-left: 200px;
+    position: relative;
+}
+.item-5 {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: blue;
+}
+.item-2{
+    transform: rotate(45deg);
+}
+.item-3 {
+    transform: rotate(90deg);
+}
+.item-4 {
+    transform: rotate(135deg);
+}
+.button {
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.rotate-scale-down-diag-1:hover {
+	-webkit-animation: rotate-scale-down-diag-1 0.7s linear both;
+	animation: rotate-scale-down-diag-1 0.7s linear both;
+}
