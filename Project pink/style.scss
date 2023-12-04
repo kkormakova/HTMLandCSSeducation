@@ -1,6 +1,4 @@
-$colorSelectSite: #F16D7F;
-$textColorBlack: #222;
-$textColorWhite: #FFF;
+@import "vars";
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +8,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+summary{
+    display: block;
+}
+summary::-webkit-details-marker {
+    display: none;
 }
 .center {
     padding-left: calc(50% - 570px);
@@ -269,6 +273,32 @@ body {
         padding-bottom: 128px;
         padding-top: 128px;
     }
+    &__pages {
+        margin-top: 48px;
+        margin-bottom: 96px;
+        padding: 15px 16px;
+        width: 283px;
+        height: 43px;
+        border: 1px solid #EBEBEB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__link {
+            color: #C4C4C4;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-decoration: none;
+        }
+        &__link:hover {
+            color: $colorSelectSite;
+        }
+    }
+}
+.link-now {
+    color: $colorSelectSite;
 }
 .card2 {
     background-color: #F7E4E2;
@@ -608,6 +638,126 @@ body {
     }
     &__button path {
         fill:#EF5B70;
+    }
+}
+.filter-sort {
+    height: 132px;
+    position: relative;
+    padding-top: 39px;
+    display: flex;
+    gap: 16px;
+}
+.filter {
+    padding-top: 13px;
+    width: 360px;
+    position: relative;
+    z-index: 10;
+    &[open] {
+        background-color: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+    &[open] .filter__heading {
+        color: $colorSelectSite;
+    }
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+    &__content{
+        background-color: #FFF;
+        padding: 0 16px 16px 16px;
+    }
+    &__summary{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+    }
+    &__heading {
+        color: $textColorBlack;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__item {
+        margin-top: 16px;
+        &[open] .filter__item__heading{
+            color: $colorSelectSite;
+        }
+        &__heading {
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 8px 11px 11px 11px;
+            border-bottom: 1px solid #EBEBEB;
+            border-left: 5px solid $colorSelectSite;
+        }
+        &__link-box {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding: 24px 16px;
+        }
+        &__link {
+            text-decoration: none;
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &__link:hover {
+            color: $colorSelectSite;
+        }
+    }
+}
+.sort {
+    display: flex;
+    padding-top: 12px;
+    gap: 28px;
+    &__details {
+        position: relative;
+    }
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__heading {
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: #FFF;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: -9px;
+        top: 22px;
+        z-index: 10;
+    }
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        color: #6F6E6E;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
 @media (max-width: 1024px) and (min-width: 768px){
