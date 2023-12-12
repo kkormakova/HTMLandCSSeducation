@@ -532,6 +532,13 @@ summary::-webkit-details-marker {
         font-weight: 400;
         line-height: normal;
     }
+    &__breadcrumbs {
+        display: flex;
+    }
+    &__breadcrumbs:not(:last-child)::after {
+        content: "/";
+        padding: 0 10px;
+    }
     &__breadcrumbs__link{
         color: #636363;
         font-family: Lato;
@@ -976,6 +983,121 @@ summary::-webkit-details-marker {
         &__button:hover {
             background-color: #E05C6E;
         }
+    }
+}
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__details {
+        color: #222;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__input {
+        width: 360px;
+        height: 45px;
+        border: 1px solid #A4A4A4;
+        padding-left: 17px;
+        padding-right: 17px;
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__sex {
+        padding-top: 10px;
+        padding-bottom: 12px;
+        display: flex;
+        gap: 21px;
+    }
+    &__sex label {
+        color: #000;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-left: 10px;
+    }
+    &__form-text {
+        width: 359px;
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__button {
+        width: 167px;
+        height: 50px;
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: 1px solid $colorSelectSite;
+        background-color: #FFF;
+        margin-top: 8px;
+    }
+    &__button:hover {
+        color: $textColorWhite;
+        background-color: $colorSelectSite;
+    }
+    &__button:hover path {
+        fill: $textColorWhite;
+    }
+    &__loyality {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    &__title {
+        color: $textColorBlack;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__text {
+        width: 652px;
+        color: $textColorBlack;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        list-style: none;
+        list-style-image: url(image/Vector.svg);
+        padding-left: 25px;
+    }
+    &__ul li {
+        padding-left: 23px;
     }
 }
 @media (max-width: 1024px) and (min-width: 768px){

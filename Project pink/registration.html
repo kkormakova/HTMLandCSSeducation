@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:ital,wght@0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d0d124ab0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="all-content">
+        <header class="header">
+            <div class="container center header__flex">
+                <div class="header__left">
+                    <a href="index.html"><img src="image/logo.svg" alt="logo" class="logo"></a>
+                    <i class="fa-solid fa-magnifying-glass fa-header-color"></i>
+                </div>
+                <div class="header__right">
+                    <div class="burger-menu">
+                        <label for="burger"><i class="fa-solid fa-bars fa-header-color"></i></label>
+                        <input checked id="burger" type="checkbox">
+                        <nav class="nav">
+                            <ul>
+                                <li>MENU</li>
+                                <li><a href="#">MAN</a></li>
+                                <li><a href="#">WOMAN</a></li>
+                                <li><a href="#">KIDS</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-user fa-header-color"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-header-color"></i></a>
+                </div>
+            </div>
+        </header>
+        <section class="top-head">
+            <div class="top-head__container center">
+                <h2 class="top-head__title">REGISTRATION</h2>
+            </div>
+        </section>
+        <section class="registration center">
+            <div class="registration__form-box">
+                <form class="registration__form" action="#">
+                    <h3 class="registration__details">Your Name</h3>
+                    <input class="registration__input" type="text" placeholder="First Name">
+                    <input class="registration__input" type="text" placeholder="Last Name">
+                    <div class="registration__sex">
+                        <div class="male">
+                            <input type="radio" id="male"><label for="male">Male</label>
+                        </div>
+                        <div class="female">
+                            <input type="radio" id="female"><label for="female">Female</label>
+                        </div>
+                    </div>
+                    <h3 class="registration__details">Login details</h3>
+                    <input class="registration__input" type="email" placeholder="Email">
+                    <input class="registration__input" type="password" placeholder="Password">
+                    <p class="registration__form-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <button class="registration__button">JOIN NOW<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z" fill="#F16D7F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" fill="#F16D7F"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="registration__loyality">
+                <h2 class="registration__title">LOYALTY HAS ITS PERKS</h2>
+                <p class="registration__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="registration__ul">
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="subscribe__overlay">
+                <img class="subscribe__overlay" src="image/Layer.png" alt="subscribe overlay">
+            </div>
+            <div class="subscribe__container center">
+                    <div class="subscribe__box">
+                        <img src="image/Intersect.png" alt="face of woman" class="subscribe__img">
+                        <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<i>a pulvinar purus condimentum“</i></p>
+                    </div>
+                    <div class="subscribe__box">
+                        <h2 class="subscribe__title">SUBSCRIBE</h1>
+                        <h3 class="subscribe__subtitle">FOR OUR NEWLETTER AND PROMOTION</h3>
+                        <div class="subscribe__input-box">
+                            <input class="subscribe__input" type="text" placeholder="Enter Your Email">
+                            <button class="subscribe__button">Subscribe</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__container center">
+                <div class="footer__right">
+                    <h3 class="footer__brand">© 2022  Brand  All Rights Reserved.</h3>
+                </div>
+                <div class="footer__left">
+                    <div class="footer__left__icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                    </div> 
+                    <div class="footer__left__icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="17px" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </div>
+                    <div class="footer__left__icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 384 512"><path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg>
+                    </div>
+                    <div class="footer__left__icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
