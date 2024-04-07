@@ -535,7 +535,7 @@ summary::-webkit-details-marker {
     &__breadcrumbs {
         display: flex;
     }
-    &__breadcrumbs:not(:last-child)::after {
+    &__breadcrumbs a:not(:last-child)::after {
         content: "/";
         padding: 0 10px;
     }
@@ -1021,14 +1021,12 @@ summary::-webkit-details-marker {
         padding-bottom: 12px;
         display: flex;
         gap: 21px;
-    }
-    &__sex label {
         color: #000;
         font-family: Lato;
         font-size: 11px;
-        font-style: normal;
         font-weight: 300;
-        line-height: normal;
+    }
+    &__sex span {
         margin-left: 10px;
     }
     &__form-text {
@@ -1052,6 +1050,9 @@ summary::-webkit-details-marker {
         border: 1px solid $colorSelectSite;
         background-color: #FFF;
         margin-top: 8px;
+    }
+    &__button svg {
+        margin-left: 20px;
     }
     &__button:hover {
         color: $textColorWhite;
@@ -1136,6 +1137,7 @@ summary::-webkit-details-marker {
         &__card-box {
             gap: 16px;
             grid-template-columns: repeat(2, 1fr);
+            grid-column-start: 2;
         }
     }
     .discounts {
@@ -1162,6 +1164,66 @@ summary::-webkit-details-marker {
         &__input-box {
             margin-bottom: 140px;
             margin-top: 27px;
+        }
+    }
+    // .carousel {
+    //     height: 624px;
+    // }
+    // .carousel_img {
+    //     height: 565px;
+    // }
+    .info {
+        &__container {
+            position: static;
+            width: 100%;
+            border:1px solid #FFFFFF;
+        }
+    }
+    .cardDisplay {
+        display: none;
+    }
+    .cart {
+        &__container {
+            flex-direction: column;
+            gap: 64px;
+        }
+        &__left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__buttons {
+                width: 508px;
+                gap: 48px;
+            }
+        }
+        &__shop-card {
+            width: 734px;
+            &__info {
+                width: 472px;
+            }
+        }
+        &__right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    .registration {
+        gap: 22px;
+        padding-top: 40px;
+        &__title {
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 10px;
+        }
+        &__text {
+            width: 354px;
+            font-size: 16px;
+        }
+        &__ul {
+            font-size: 16px;
+            gap: 26px;
         }
     }
 }
@@ -1276,4 +1338,116 @@ summary::-webkit-details-marker {
             margin-bottom: 9px;
         }
     }
+    .top-head {
+        &__container {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+    .carousel__flex {
+        justify-content: space-between;
+    }
+    .info {
+        &__container {
+            position: static;
+            width: 100%;
+            height: 600px;
+            border: 1px solid #FFFFFF;
+        }
+        &__title-sex{
+            font-weight: 400;
+        }
+        &__name-of-product {
+            font-weight: 400;
+        }
+        &__information {
+            width: 326px;
+            font-weight: 400;
+            height: 105px;
+        }
+        &__price {
+            font-weight: 400;
+        }
+        &__line {
+            width: 175px;
+        }
+    }
+    .cardDisplay2 {
+        display: none;
+    }
+    .cart {
+        padding-top: 39px;
+        padding-bottom: 96px;
+        &__container {
+            flex-direction: column;
+            gap: 48px;
+        }
+        &__shop-card {
+            width: 358px;
+            height: 188px;
+            margin-bottom: 32px;
+            &__img {
+                width: 144px;
+                height: 188px;
+            }
+            &__info {
+                width: 214.14px;
+                height: 188px;
+                padding: 13px 12px 37px 17px;
+                gap: 3px;
+            }
+            &__name svg {
+                width: 9.88px;
+                height: 11.06px;
+            }
+            &__name {
+                margin-bottom: 21px;
+            }
+            &__name-title {
+                width: 140px;
+                font-size: 16px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+            &__text-quant {
+                font-size: 10px;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+        }
+        &__left {
+            &__buttons {
+                gap: 9px;
+                padding-top: 0;
+            }
+            &__button {
+                width: 175px;
+                height: 33px;
+                font-size: 12px;
+            }
+        }
+        &__right {
+            gap: 48px;
+        }
+    }
+    .registration {
+        padding-top: 40px;
+        flex-direction: column;
+        gap: 40px;
+        &__title {
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 10px;
+        }
+        &__text {
+            width: 354px;
+            font-size: 16px;
+        }
+        &__ul {
+            font-size: 16px;
+            gap: 16px;
+        }
+    }
+    
 }
